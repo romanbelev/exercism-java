@@ -9,8 +9,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //String[] program = {"mov a 5", "inc a", "dec a", "dec a", "jnz a -1", "inc a"};
-        String[] program = {"mov c 12","mov b 0","mov a 200","dec a","inc b","jnz a -2","dec c","mov a b","jnz c -5","jnz 0 1","mov c a"};
+        // String[] program = {"mov a 5", "inc a", "dec a", "dec a", "jnz a -1", "inc a"};
+        String[] program = {"mov d 100","dec d","mov b d","jnz b -2","inc d","mov a d","jnz 5 10","mov c a"};
         SimpleAssemblerInterpret sai = new SimpleAssemblerInterpret(program);
         sai.interpret();
     }
@@ -25,9 +25,10 @@ class SimpleAssemblerInterpret {
         this.program = program;
     }
 
-    public void interpret() {
+    public Map<String, Integer> interpret() {
         runInstruction();
-        System.out.println(variable);
+        return variable;
+        // System.out.println(variable);
     }
 
 
@@ -118,7 +119,12 @@ class SimpleAssemblerInterpret {
                     variableValue = variable.get(variableName);
                 }
 
+                // Stop program
                 int steps = Integer.parseInt(jnzMatcher.group(2));
+                if (steps > program.length) {
+                    break;
+                }
+
                 if (variableValue == 0) {
                     System.out.println("jnz goes 0 to the next instruction --->");
                 } else if (steps < 0) {
@@ -135,7 +141,5 @@ class SimpleAssemblerInterpret {
 
 
         }
-
-
     }
 }
