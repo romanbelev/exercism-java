@@ -1,0 +1,26 @@
+<jwrapper>
+<BuildOutputFolder>D:\Java\labs\romanbieliev_lab3\JWrapperBuild</BuildOutputFolder>
+<BundleName></BundleName>
+<SplashPNG>C:\Users\Roman\AppData\Roaming\JWrapper-JWrapperApp\JWrapper-JWrapperApp-00069494495-complete\resources\jwlogo256.png</SplashPNG>
+<BundleLogoPNG>C:\Users\Roman\AppData\Roaming\JWrapper-JWrapperApp\JWrapper-JWrapperApp-00069494495-complete\resources\jwlogo256.png</BundleLogoPNG>
+<InstallType>CurrentUser</InstallType>
+<App>
+  <Name></Name>
+  <LogoPNG>C:\Users\Roman\AppData\Roaming\JWrapper-JWrapperApp\JWrapper-JWrapperApp-00069494495-complete\resources\jwlogo256.png</LogoPNG>
+  <MainClass>FakeMain</MainClass>
+</App>
+<SupportedLanguages>en</SupportedLanguages>
+<SkipWindows>true</SkipWindows>
+<SkipLinux>true</SkipLinux>
+<SkipMacOS>true</SkipMacOS>
+<SkipLinuxARM32>true</SkipLinuxARM32>
+<NoStripJREs>true</NoStripJREs>
+<Pack200Effort>0</Pack200Effort>
+<WindowsElevation>None</WindowsElevation>
+<WindowsElevationUiAccess>true</WindowsElevationUiAccess>
+<JvmOptions>
+</JvmOptions>
+<!-- IMPORTANT place custom content BELOW this comment for compatibility with JW App -->
+
+
+</jwrapper>

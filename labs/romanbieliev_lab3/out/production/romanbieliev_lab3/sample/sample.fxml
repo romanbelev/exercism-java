@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="root" prefHeight="630" prefWidth="955" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <SplitPane dividerPositions="0.1557632398753894" focusTraversable="true" prefHeight="-1.0" prefWidth="100.0">
+            <items>
+                <AnchorPane prefHeight="600.0" prefWidth="151.0">
+                    <children>
+                        <Label alignment="TOP_CENTER" layoutX="-3.0" layoutY="11.0" minWidth="60.0" prefHeight="20.0" prefWidth="150.0" style="&#10;" text="Life generator" wrapText="false">
+                            <font>
+                                <Font size="14.0" fx:id="x1" />
+                            </font>
+                            <textFill>
+                                <Color blue="0.624" green="0.624" red="0.624" fx:id="x2" />
+                            </textFill>
+                        </Label>
+                        <Button id="btnStart" layoutX="10.0" layoutY="231.0" mnemonicParsing="false" onAction="#actionBtnStart" prefHeight="25.0" prefWidth="58.0" text="Start" textAlignment="CENTER" />
+                        <Button id="btnStop" layoutX="78.0" layoutY="231.0" mnemonicParsing="false" onAction="#actionBtnStop" prefHeight="25.0" prefWidth="58.0" text="Stop" textAlignment="CENTER" />
+                        <Label alignment="CENTER" layoutX="-3.0" layoutY="203.0" minWidth="58.0" prefHeight="20.0" prefWidth="150.0" style="&#10;" text="Simulation" wrapText="false">
+                            <font>
+                                <Font size="14.0" fx:id="x11" />
+                            </font>
+                            <textFill>
+                                <Color blue="0.624" green="0.624" red="0.624" fx:id="x21" />
+                            </textFill>
+                        </Label>
+                        <Separator layoutX="-20.0" layoutY="194.0" prefHeight="2.0" prefWidth="167.0" />
+                        <Button id="btnRandom" layoutX="11.0" layoutY="41.0" mnemonicParsing="false" onAction="#actionBtnRandom" prefHeight="25.0" prefWidth="125.0" text="Random" />
+                        <Button id="btnCross" layoutX="11.0" layoutY="76.0" mnemonicParsing="false" onAction="#actionBtnCross" prefHeight="25.0" prefWidth="125.0" text="Cross" />
+                        <Button id="btnBorder" layoutX="11.0" layoutY="111.0" mnemonicParsing="false" onAction="#actionBtnBorder" prefHeight="25.0" prefWidth="125.0" text="Border" />
+                        <Button id="btnGlider" layoutX="11.0" layoutY="146.0" mnemonicParsing="false" onAction="#actionBtnGlider" prefHeight="25.0" prefWidth="125.0" text="Glider" />
+                    </children>
+                </AnchorPane>
+                <Pane prefHeight="600.0" prefWidth="750.0">
+                    <children>
+                        <AnchorPane id="anchorContent" fx:id="anchorContent" layoutX="0" minHeight="0" minWidth="0" prefHeight="600.0" prefWidth="900.0" />
+                    </children>
+                </Pane>
+            </items>
+        </SplitPane>
+        <HBox id="HBox" alignment="CENTER_LEFT" spacing="5.0" VBox.vgrow="NEVER">
+            <children>
+                <Label alignment="BASELINE_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="-1.0" prefHeight="20.0" prefWidth="81.0" text="Generation: " HBox.hgrow="ALWAYS">
+                    <textFill>
+                        <Color blue="0.625" green="0.625" red="0.625" fx:id="x4" />
+                    </textFill>
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label id="fieldGeneration" fx:id="fieldGeneration" maxHeight="1.7976931348623157E308" maxWidth="-1.0" prefHeight="20.0" prefWidth="100.0" text="0">
+                    <textFill>
+                        <Color blue="0.625" green="0.625" red="0.625" fx:id="x41" />
+                    </textFill>
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+            </children>
+            <padding>
+                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+            </padding>
+        </HBox>
+    </children>
+</VBox>
