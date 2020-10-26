@@ -29,9 +29,9 @@ public class Vector3d {
     public static double staticScalarMultiply(Vector3d vectorOne, Vector3d vectorTwo) {
         double res = 0;
 
-        res += Math.abs(vectorOne.getCoordX() * vectorTwo.getCoordX());
-        res += Math.abs(vectorOne.getCoordY() * vectorTwo.getCoordY());
-        res += Math.abs(vectorOne.getCoordZ() * vectorTwo.getCoordZ());
+        res += vectorOne.getCoordX() * vectorTwo.getCoordX();
+        res += vectorOne.getCoordY() * vectorTwo.getCoordY();
+        res += vectorOne.getCoordZ() * vectorTwo.getCoordZ();
 
         return res;
     }
@@ -39,9 +39,9 @@ public class Vector3d {
     public double scalarMultiply(Vector3d vectorTwo) {
         double res = 0;
 
-        res += Math.abs(coordX * vectorTwo.getCoordX());
-        res += Math.abs(coordY * vectorTwo.getCoordY());
-        res += Math.abs(coordZ * vectorTwo.getCoordZ());
+        res += coordX * vectorTwo.getCoordX();
+        res += coordY * vectorTwo.getCoordY();
+        res += coordZ * vectorTwo.getCoordZ();
 
         return res;
     }

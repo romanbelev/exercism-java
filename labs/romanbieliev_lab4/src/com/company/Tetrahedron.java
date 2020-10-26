@@ -15,6 +15,8 @@ public class Tetrahedron {
         double res = 0;
 
         Vector3d newVector = Vector3d.staticVectorMultiply(vectorOne, vectorTwo);
+        // System.out.println(newVector.toString());
+
         res = Math.abs(Vector3d.staticScalarMultiply(newVector, vectorThree)) / 6;
 
         return res;
