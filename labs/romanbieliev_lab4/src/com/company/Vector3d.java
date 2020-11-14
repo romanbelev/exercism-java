@@ -6,8 +6,6 @@ public class Vector3d {
     private double coordY;
     private double coordZ;
 
-    // private final int COORD_COUNT = 3;
-
     public Vector3d(double coordX, double coordY, double coordZ) {
         this.coordX = coordX;
         this.coordY = coordY;

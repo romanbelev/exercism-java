@@ -15,10 +15,17 @@ public class Tetrahedron {
         double res = 0;
 
         Vector3d newVector = Vector3d.staticVectorMultiply(vectorOne, vectorTwo);
-        // System.out.println(newVector.toString());
-
         res = Math.abs(Vector3d.staticScalarMultiply(newVector, vectorThree)) / 6;
 
         return res;
+    }
+
+    public void print() {
+        double volume = calculateVolume();
+
+        System.out.printf("Tetrahedron volume: %.2f\n", volume);
+        System.out.println(vectorOne.toString());
+        System.out.println(vectorTwo.toString());
+        System.out.println(vectorThree.toString());
     }
 }
