@@ -30,6 +30,7 @@ public class Main extends Application {
 
         GraphicsContext gc = canvas.getGraphicsContext2D();
 
+        /*
         Point[] rectanglePoints = new Point[] {
                 new Point(420, 200),
                 new Point(620, 200),
@@ -56,7 +57,9 @@ public class Main extends Application {
                 new Point(100, 130),
                 new Point(170, 60),
         };
+        */
 
+        /*
         Rectangle rectangle = new Rectangle(gc);
         rectangle.draw(rectanglePoints);
 
@@ -65,7 +68,13 @@ public class Main extends Application {
 
         Polygon polygon = new Polygon(gc);
         polygon.draw(polygonPoints);
+        */
 
+        Vector vectorOne = new Vector(1, 2, 5);
+        Vector vectorTwo = new Vector(1,2, 1);
+
+        Vector vectorThree = vectorOne.subtractVectorFromVector(vectorTwo);
+        System.out.println(vectorThree.toString());
 
 
 

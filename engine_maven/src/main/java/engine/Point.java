@@ -1,19 +1,36 @@
 package engine;
 
 public class Point {
-    double coordinateX;
-    double coordinateY;
+    private int coordinateX;
+    private int coordinateY;
+    private int coordinateZ;
 
-    public Point(double coordinateX, double coordinateY) {
+    public Point(int coordinateX, int coordinateY, int coordinateZ) {
         this.coordinateX = coordinateX;
         this.coordinateY = coordinateY;
+        this.coordinateZ = coordinateZ;
     }
 
-    public double getCoordinateX() {
-        return coordinateX;
+    /*
+    public Point addVectorToPoint(Vector vector) {
+
     }
 
-    public double getCoordinateY() {
-        return coordinateY;
+    public Point substractVectorFromPoint(Vector vector) {
+
+    }
+
+    public Vector substractPointFromPoint(Point point) {
+
+    }
+    */
+
+    public String draw() {
+        return String.valueOf(coordinateX) + ", " + String.valueOf(coordinateY) + ", " + String.valueOf(coordinateZ);
+    }
+
+    @Override
+    public String toString() {
+        return "Point: (" + coordinateX + ", " + coordinateY + ", " + coordinateZ + ")";
     }
 }

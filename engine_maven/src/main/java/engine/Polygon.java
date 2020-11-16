@@ -17,8 +17,8 @@ public class Polygon extends Figure {
         double[] pointsY = new double[points.length];
 
         for (int i = 0; i < points.length; ++i) {
-            pointsX[i] = points[i].getCoordinateX();
-            pointsY[i] = points[i].getCoordinateY();
+            // pointsX[i] = points[i].getCoordinateX();
+            // pointsY[i] = points[i].getCoordinateY();
 
             System.out.println(pointsX[i]);
         }
